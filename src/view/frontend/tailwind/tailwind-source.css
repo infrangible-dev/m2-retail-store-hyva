@@ -1,0 +1,32 @@
+/**
+ * @author      Andreas Knollmann
+ * @copyright   2014-2024 Softwareentwicklung Andreas Knollmann
+ * @license     http://www.opensource.org/licenses/mit-license.php MIT
+ */
+
+#retail-store-search .buttons {
+    display: flex;
+}
+
+#retail-store-search .buttons button {
+    margin: 10px 10px 10px 0;
+}
+
+.google-maps div [role="dialog"] h3, .store-list h3 {
+    font-weight: 600;
+    line-height: 1.1;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.store-list h3 {
+    margin-top: 2rem;
+}
+
+.google-maps div [role="dialog"] .btn, .store-list .btn {
+    display: inline-block;
+}
+
+.google-maps div [role="dialog"] .info-window-link {
+    margin-top: 1rem;
+}
