@@ -2,7 +2,7 @@
     "name": "infrangible/m2-retail-store-hyva",
     "description": "Infrangible Magento 2 Retail Store Hyvä Theme",
     "type": "magento2-module",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "license": "MIT",
     "keywords": [
         "Magento"
@@ -19,8 +19,8 @@
     "require": {
         "php": ">=7.1",
         "magento/framework": "~102.0.0|~103.0.0",
-        "infrangible/m2-retail-store": "~1.2",
-        "infrangible/m2-google-maps-hyva": "~1.0",
+        "infrangible/m2-retail-store": "~1.5.0",
+        "infrangible/m2-google-maps-hyva": "~1.0.0",
         "hyva-themes/magento2-compat-module-fallback": "*"
     },
     "autoload": {
