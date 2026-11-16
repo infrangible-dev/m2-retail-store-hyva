@@ -1,10 +1,11 @@
 {
     "require": [
-        "webserver_php_magento-module-demo.json",
-        "database_magento2-module-demo.json",
-        "elasticsearch_magento-module-demo.json",
-        "mailcatcher_magento.json",
-        "magento2-module-demo.json"
+        "{{{1200128_anodosys}}}/webserver_php_magento-module-demo.json",
+        "{{{1200128_anodosys}}}/database_magento2-module-demo.json",
+        "{{{1200128_anodosys}}}/elasticsearch_magento-module-demo.json",
+        "{{{1200128_anodosys}}}/mailcatcher_magento.json",
+        "{{{1200128_anodosys}}}/magento2-module-demo.json",
+        "{credentials}/1200128_anodosys/add-hyva-theme.json"
     ],
     "global": {
         "systemName": "infrangible_m2_retail_store_hyva"
@@ -14,10 +15,14 @@
         "webServerVersion": "2.4",
         "phpVersion": "8.2",
         "containerVolumes": [
-            "../src:/var/www/magento/htdocs/app/code/Infrangible/RetailStoreHyva:www-data"
+            "{configPath}/../src:/var/www/magento/htdocs/app/code/Infrangible/RetailStoreHyva:www-data"
         ],
-        "beforeContainerInstallDockerScript": "add-hyva-theme.sh",
-        "beforeContainerInstallDockerUser": "<webServerUser>"
+        "beforeContainerInstallDockerScript": "{{{{1200128_anodosys}}}}/docker/add-hyva-theme.sh",
+        "beforeContainerInstallDockerParameters": [
+            "--hyvaToken {hyvaToken}",
+            "--hyvaRepositoryUrl {hyvaRepositoryUrl}"
+        ],
+        "beforeContainerInstallDockerUser": "{webServerUser}"
     },
     "db": {
         "databaseType": "mysql",
