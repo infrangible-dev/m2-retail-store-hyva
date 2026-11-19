@@ -7,6 +7,9 @@
         "{{{1200128_anodosys}}}/magento2-module-demo.json",
         "{credentials}/1200128_anodosys/add-hyva-theme.json"
     ],
+    "extensions": {
+        "1200128_anodosys": "dev"
+    },
     "global": {
         "systemName": "infrangible_m2_retail_store_hyva"
     },
